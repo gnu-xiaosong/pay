@@ -5,6 +5,7 @@
 * api.php:网页端请求接口
 * corn.php:监控软件端请求接口
 * db.sql:创建数据库文件(导入即可)
+* payCorn.php:网页端付款状态循环请求状态接口
 ## 支付界面截图:
 [![DkpxF1.jpg](https://s3.ax1x.com/2020/11/16/DkpxF1.jpg)](https://imgchr.com/i/DkpxF1)
 ## 后台管理系统截图:
