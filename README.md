@@ -3,7 +3,7 @@
 ## 下载:
 * api旧版本:[点我下载](https://fusong.lanzous.com/b01c0i4wd
 )   密码:f8rk
-* 最新集成SDK版:[点我下载](https://fusong.lanzous.com/b01c0sgwf
+* (推荐)最新集成SDK版:[点我下载](https://fusong.lanzous.com/b01c0sgwf
 )密码:9phm
 ## 文档说明:
 ### 体验:http://103.152.170.170:8088/demo/counter1.php
