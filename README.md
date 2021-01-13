@@ -1,8 +1,10 @@
 #  pay第三方支付系统，自带监控软件和后台管理系统
 ## 全新开发的第三方支付系统源码，自带软件监控。对接支付宝，后续将会陆续添加更多特性。
 ## 下载:
-* [点我下载](https://fusong.lanzous.com/b01c0i4wd
+* api旧版本:[点我下载](https://fusong.lanzous.com/b01c0i4wd
 )   密码:f8rk
+* 最新集成SDK版:[点我下载](https://fusong.lanzous.com/b01c0sgwf
+)密码:9phm
 ## 文档说明:
 ### 体验:http://103.152.170.170:8088/demo/counter1.php
 ## 系统搭建使用方法:
@@ -35,4 +37,4 @@
 ## 2021-1-13  添加监听微信支付和qq支付(暂时监听功能不可用)
 ## 2020-1-14  添加集成SDK包，全新SDK版支付系统重构
 ## 捐赠:
-(捐赠)["http://103.152.170.170:8088/demo/counter1.php"]
+[捐赠](http://103.152.170.170:8088/demo/counter1.php)
