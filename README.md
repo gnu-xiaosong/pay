@@ -30,7 +30,7 @@
 ### 支付界面截图:
 [![DkpxF1.jpg](https://s3.ax1x.com/2020/11/16/DkpxF1.jpg)](https://imgchr.com/i/DkpxF1)
 ### 后台管理系统截图:
-[![69CiAe.jpg](https://s3.ax1x.com/2021/02/27/69CiAe.jpg)](https://imgtu.com/i/69CiAe)
+[![69C2DK.jpg](https://s3.ax1x.com/2021/02/27/69C2DK.jpg)](https://imgtu.com/i/69C2DK)
 ### 商户后台系统截图:
 [![69C2DK.jpg](https://s3.ax1x.com/2021/02/27/69C2DK.jpg)](https://imgtu.com/i/69C2DK)
 ## 对接开发文档:
