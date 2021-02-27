@@ -367,11 +367,12 @@ events.on("notification", function(n){
 * db.sql:创建数据库文件(导入即可)
 * payCorn.php:网页端付款状态循环请求状态接口
 * notifaction.php 支付成功支付回调处理文件
-### 支付界面截图:
+## 截图展示
+#### 支付界面截图:
 [![DkpxF1.jpg](https://s3.ax1x.com/2020/11/16/DkpxF1.jpg)](https://imgchr.com/i/DkpxF1)
-### 后台管理系统截图:
+#### 后台管理系统截图:
 [![69CbKP.jpg](https://s3.ax1x.com/2021/02/27/69CbKP.jpg)](https://imgtu.com/i/69CbKP)
-### 商户后台系统截图:
+#### 商户后台系统截图:
 [![69C2DK.jpg](https://s3.ax1x.com/2021/02/27/69C2DK.jpg)](https://imgtu.com/i/69C2DK)
 ## 对接开发文档:
 * 开发中
