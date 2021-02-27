@@ -11,11 +11,11 @@
 * 后端利用thinkphp开发
 ## 文档说明:
 ### 通用接口地址:
-* 支付接口:**http://域名/pay/api.php**
-* 软件监控地址:**http://域名/pay/corn.php**
-* demo测试地址:**http://域名/demo**
-* 监控软件下载地址:**http://域名/SDK/云支付.apk**
-* 集成包SDK下载地址:**http://域名/SDK/sdk.zip**
+* 支付接口:```http://域名/pay/api.php```
+* 软件监控地址:```http://域名/pay/corn.php```
+* demo测试地址:```http://域名/demo```
+* 监控软件下载地址:```http://域名/SDK/云支付.apk```
+* 集成包SDK下载地址:```http://域名/SDK/sdk.zip```
 ### 体验:
 >如果不想自己搭建系统，可以在这里申请商户集成。
 * 管理员后台:[点我进入](http://103.152.170.170:8083/public/index.php/admin)
