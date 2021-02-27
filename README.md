@@ -78,6 +78,19 @@
 ├─README.md             README 文件
 ├─index.phhp            项目入口文件
 ~~~
+### 核心后端源码文件:
+* api.php:网页端请求接口
+* corn.php:监控软件端请求接口
+* db.sql:创建数据库文件(导入即可)
+* payCorn.php:网页端付款状态循环请求状态接口
+* notifaction.php 支付成功支付回调处理文件
+## 截图展示
+#### 支付界面截图:
+[![DkpxF1.jpg](https://s3.ax1x.com/2020/11/16/DkpxF1.jpg)](https://imgchr.com/i/DkpxF1)
+#### 后台管理系统截图:
+[![69CbKP.jpg](https://s3.ax1x.com/2021/02/27/69CbKP.jpg)](https://imgtu.com/i/69CbKP)
+#### 商户后台系统截图:
+[![69C2DK.jpg](https://s3.ax1x.com/2021/02/27/69C2DK.jpg)](https://imgtu.com/i/69C2DK)
 
 ## 文档说明:
 #### SDK对接文档:
@@ -361,19 +374,6 @@ events.on("notification", function(n){
 * 支付宝语音一定要打开，保证能正常播报,授予微信消息通知权限
 * 软件监控订单日志文件在sd卡目录下的payLog.txt文件
 
-### 核心后端源码文件:
-* api.php:网页端请求接口
-* corn.php:监控软件端请求接口
-* db.sql:创建数据库文件(导入即可)
-* payCorn.php:网页端付款状态循环请求状态接口
-* notifaction.php 支付成功支付回调处理文件
-## 截图展示
-#### 支付界面截图:
-[![DkpxF1.jpg](https://s3.ax1x.com/2020/11/16/DkpxF1.jpg)](https://imgchr.com/i/DkpxF1)
-#### 后台管理系统截图:
-[![69CbKP.jpg](https://s3.ax1x.com/2021/02/27/69CbKP.jpg)](https://imgtu.com/i/69CbKP)
-#### 商户后台系统截图:
-[![69C2DK.jpg](https://s3.ax1x.com/2021/02/27/69C2DK.jpg)](https://imgtu.com/i/69C2DK)
 ## 对接开发文档:
 * 开发中
 # 日志:
