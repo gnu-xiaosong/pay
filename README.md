@@ -1,16 +1,15 @@
-#  pay第三方支付系统，自带监控软件和后台管理系统
+#  pay第三方支付系统，自带监控软件和后台管理系统+商户后台管理系统
 ## 全新开发的第三方支付系统源码，自带软件监控。对接支付宝，后续将会陆续添加更多特性。
 ## 下载:
-* api旧版本:[点我下载](https://fusong.lanzous.com/b01c0i4wd
-)   密码:f8rk
-* (推荐)最新集成SDK版:[点我下载](https://fusong.lanzous.com/b01c0sgwf
-)密码:9phm
+
+## 介绍:
+* 前端利用vue开发，
+* 后端利用thinkphp开发
 ## 文档说明:
 ### 体验:http://103.152.170.170:8088/demo/counter1.php
 ## 系统搭建使用方法:
-* 后端:直接下载后端源码放在目录下面，接口即http://域名或ip/接口文件
-* 监控端:更换对应域名或ip即可
-## 对接方法:
+* 解压放入网站目录下访问域名即可(如果需要全新安装只需要删除/public/install 目录下的install.lock和config.db.php文件即可)
+## 商户对接方法:
 * 下载监控软件
 * 到官网注册申请商户信息
 * 填写商户信息到软件启动运行
@@ -24,10 +23,13 @@
 * corn.php:监控软件端请求接口
 * db.sql:创建数据库文件(导入即可)
 * payCorn.php:网页端付款状态循环请求状态接口
-## 支付界面截图:
+* notifaction.php 支付成功支付回调处理文件
+### 支付界面截图:
 [![DkpxF1.jpg](https://s3.ax1x.com/2020/11/16/DkpxF1.jpg)](https://imgchr.com/i/DkpxF1)
-## 后台管理系统截图:
+### 后台管理系统截图:
 [![Dk99SK.md.jpg](https://s3.ax1x.com/2020/11/16/Dk99SK.md.jpg)](https://imgchr.com/i/Dk99SK)
+### 商户后台系统截图:
+
 ## 对接开发文档:
 
 # 日志:
