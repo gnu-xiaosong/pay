@@ -10,7 +10,26 @@
 * 前端利用vue开发，
 * 后端利用thinkphp开发
 ## 文档说明:
-### 通用接口地址:
+#### SDK对接文档:
+###### 核心文件:
+* yunApi.php: 调用SDK支付接口文件
+* notify_url.php: 异步支付处理文件
+* return_url.php: 同步跳转处理文件(主要SDK集成业务逻辑处理文件)
+###### yunApi.php接收参数:
+>请求方法:同时支持GET或POST
+>说明:具体参数详见SDK下的help.txt文件说明。具体以SDK下的help.txt文件为准
+
+| 参数 | 含义    |类型 | 说明  |
+|:--------:|:-------------:|:-------------:|:-------------:|
+| trade_no  | 商户网站订单编号 | int| 必传 |
+| type   | 支付类型 (支付宝1，微信2，QQ支付3)| int| 必传 |
+| goods_name  | 商品名 |string|  必传 |
+| money | 金额 | float| 必传 |
+| pay_tag  | 商品备注 | string| 可传 |
+| description  | 商品描述 | string| 可传 |
+| sitename | 站点名称 | string| 可传 |
+
+## 通用接口地址:
 * 支付接口:```http://域名/pay/api.php```
 * 软件监控地址:```http://域名/pay/corn.php```
 * demo测试地址:```http://域名/demo```
