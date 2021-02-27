@@ -21,46 +21,45 @@
 * 软件一定要给予通知栏权限！！(否则无法监控)，自启动，以防被杀死
 * 支付宝语音一定要打开，保证能正常播报,授予微信消息通知权限
 * 软件监控订单日志文件在sd卡目录下的payLog.txt文件
-## 项目目录结构:
+## 项目核心目录结构
 ~~~
-├─application           应用目录
-│  ├─index            公共模块目录（可以更改）
-│          模块目录
-│  │  ├─common.php      模块函数文件
-│  │  ├─controller      控制器目录
-│  │  ├─model           模型目录
-│  │  ├─view            视图目录
-│  │  └─ ...            更多类库目录
-│  │
-│  ├─command.php        命令行定义文件
-│  ├─common.php         公共函数文件
-│  └─tags.php           应用行为扩展定义文件
+├─application           接口目录
+│  ├─index             首页接口目录
+│  ├─admin             管理员后台接口目录
+│  ├─user              商户后台接口目录
+│  ├─api               公共接口目录
+│  └─route.php         路由配置文件
+├─demo                 支付系统测试目录(demo)
+│  
+├─SDK                  支付系统集成sdk下载目录(更新时保持其文件名不变！！！，否则会下载出错)
+│  ├─sdk.zip          集成支付系统SDK压缩包
+│  └─云支付.apk        监控软件
 │
-├─config                应用配置目录
-│  ├─module_name        模块配置目录
-│  │  ├─database.php    数据库配置
-│  │  ├─cache           缓存配置
-│  │  └─ ...            
-│  │
-│  ├─app.php            应用配置
-│  ├─cache.php          缓存配置
-│  ├─cookie.php         Cookie配置
-│  ├─database.php       数据库配置
-│  ├─log.php            日志配置
-│  ├─session.php        Session配置
-│  ├─template.php       模板引擎配置
-│  └─trace.php          Trace配置
+├─template               模版目录
+│  ├─admin              管理员后台模版目录
+│  └─user               商户后台模版目录
 │
-├─route                 路由定义目录
-│  ├─route.php          路由定义
-│  └─...                更多
+├─pay                    支付系统核心源码{核心源码}
+│  ├─js                 js类库目录
+│  ├─lib                相关类库目录
+│  ├─payPage            支付界面模版目录
+│  │ └─pay_pages_default.php    默认支付界面文件
+│  ├─corn.php           监控软件端请求接口
+│  ├─api.php            支付接口(核心接口)
+│  ├─payCorn.php        网页端付款状态循环请求状态接口
+│  ├─notifaction.php    支付回调通知处理文件(常用于同步通知和异步通知处理)
+│  ├─qr.php             支付二维码生成文件
+│  ├─database.php       数据库配置文件
+│  └─db.sql             数据库备份文件
 │
-├─public                WEB目录（对外访问目录）
+├─public                 WEB目录（对外访问目录）
 │  ├─index.php          入口文件
 │  ├─router.php         快速测试文件
-│  └─.htaccess          用于apache的重写
-│
-├─thinkphp              框架系统目录
+│  └─install            系统程序安装引导文件目录
+│     ├─config.db.php   系统数据库配置文件(修改数据库信息在这里修改)
+│     └─install.lock    安装锁文件(需要重新安装程序时删除该文件和config.db.php文件即可)
+│ 
+├─thinkphp              thinkphp核心类库源码目录
 │  ├─lang               语言文件目录
 │  ├─library            框架类库目录
 │  │  ├─think           Think类库包目录
@@ -76,12 +75,11 @@
 │
 ├─extend                扩展类库目录
 ├─runtime               应用的运行时目录（可写，可定制）
-├─vendor                第三方类库目录（Composer依赖库）
 ├─build.php             自动生成定义文件（参考）
 ├─composer.json         composer 定义文件
 ├─LICENSE.txt           授权说明文件
 ├─README.md             README 文件
-├─think                 命令行入口文件
+├─index.phhp            项目入口文件
 ~~~
 
 ### 核心后端源码接口:
