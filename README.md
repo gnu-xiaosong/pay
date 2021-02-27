@@ -91,13 +91,8 @@
 [![69CbKP.jpg](https://s3.ax1x.com/2021/02/27/69CbKP.jpg)](https://imgtu.com/i/69CbKP)
 #### 商户后台系统截图:
 [![69C2DK.jpg](https://s3.ax1x.com/2021/02/27/69C2DK.jpg)](https://imgtu.com/i/69C2DK)
-## 通用接口地址:
-* 支付接口:```http://域名/pay/api.php```
-* 软件监控地址:```http://域名/pay/corn.php```
-* demo测试地址:```http://域名/demo```
-* 监控软件下载地址:```http://域名/SDK/云支付.apk```
-* 集成包SDK下载地址:```http://域名/SDK/sdk.zip```
-### 体验:
+
+## 体验:
 >如果不想自己搭建系统，可以在这里申请商户集成。
 * 管理员后台:[点我进入](http://103.152.170.170:8083/public/index.php/admin)
 * 商户后台:[点我进入](http://103.152.170.170:8083/public/index.php/user)
@@ -105,6 +100,12 @@
 ## 系统搭建使用方法:
 * 解压放入网站目录下访问域名即可(如果需要全新安装只需要删除/public/install 目录下的install.lock和config.db.php文件即可)
 * 提示:在宝塔环境下会出现没有入口文件的情况 ,需要删除宝塔生成的防跨站文件.user.ini文件即可
+## 通用接口地址:
+* 支付接口:```http://域名/pay/api.php```
+* 软件监控地址:```http://域名/pay/corn.php```
+* demo测试地址:```http://域名/demo```
+* 监控软件下载地址:```http://域名/SDK/云支付.apk```
+* 集成包SDK下载地址:```http://域名/SDK/sdk.zip```
 ## 商户对接方法:
 * 第一步:申请商户:到官网[这里的官网指用该程序搭建的网站]注册申请商户信息([点我注册](http://103.152.170.170:8083/public/index.php/user))
 * 第二步:下载监控软件和SDK集成包:登陆商户后台，
