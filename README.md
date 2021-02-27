@@ -3,9 +3,13 @@
 * 所有人:小松科技
 * 邮箱:1829134124@qq.com
 * 说明:有任何问题都可以私信我
+## 软件支付监听对象:
+* 支付-------ok
+* 微信支付------ok
+* QQ------暂时不支持
 ## 安全声明:
 * 不建议用于商业用途，该程序不适用于大型支付场景，适用于小型支付场景。监听成功比例与支付接口调用频率成反比。
-* 每个个体支付时间间隔需要大于2分钟。该时长与支付页面等待时一致。
+* 每个个体支付时间间隔需要大于2分钟。该时长与支付页面等待时长一致。
 * 设置不同金额会增加监听支付成功比例。
 * 后期会不断优化提高支付成功比例。
 ## 下载:
@@ -139,7 +143,140 @@ echo "支付成功！";
 echo "签名验证失败！";
 }
 ```
+##### 监听软件设置:
+* 声明:该支付监听软件只监听微信和支付宝支付金额信息。不会监听其他敏感信息。更不会监听用户个人信息。源代码完全开放(如下)(请大家下载正版官网的监听软件，以防被二次开发从事用户信息监听。！！！)
+```javascript
+auto();
+var str;
+var str1;
+//启动通知栏监控
+events.observeNotification();
+events.on("notification", function(n){
+            if(n.getTitle()!= null){
+               //支付宝监听
+                if (n.getPackageName() == "com.eg.android.AlipayGphone"){
+                    str = n.getTitle();
+                    //支付宝通过正则判断提取
+                    str1 = str.match(/你已成功收款(.*)元/);
+                    if (str1 != null) {
+                        //获取成功
+                        log(str1);
+                        log(str1[1]);
+                        //调用api
+                        var response = payApi(str1[1], 1);
+                        //写进日志文件
+                        writeLog(response, 1);
+                        toast("小松云支付:" + response);
+                    }
+                } 
+                //微信支付监听
+                if(n.getPackageName() == "com.tencent.mm" && n.getTitle() == "微信支付"){
+                    str1 = n.getText();
+                    //支付宝通过正则判断提取
+                    str2 = str1.match(/微信支付收款(.*)元/);
+                    log(str2);
+                    if(str2 != null){
+                        //获取成功
+                        log(str2);
+                        log(str2[1]);
+                        //调用api
+                        var response1 = payApi(str2[1], 2);
+                        //写进日志文件
+                        writeLog(response1, 2);
+                        toast("小松云支付:" + response1);
+                    }
+                   }      
+                   //打印
+                    log(n.getTitle());
+                }            
+});
+            //支付异步回调api
+            function payApi(money, type) {
 
+                /*参数说明:
+                 *@param:money  金额
+                 *@param:type   支付方式(支付宝1,微信2, QQ3)
+                 */
+                //本地数据获取
+                var storage = storages.create("pay");
+                var data = storage.get("paySite");
+                //接口地址
+                var url = data.url;
+                //传输内容
+                var data1 = {
+                    "id": data.ID,
+                    "key": data.key,
+                    "money": money,
+                    "type": type
+                };
+                //发起请求
+                var res = http.get(url + "?id=" + data1.id + "&key=" + data1.key + "&money=" + data1.money + "&type=" + data1.type);
+                log(res.statusCode);
+                //res响应判断
+                if (res.statusCode == 404) {
+
+                    return "网络异常或url有误！";
+                } else if (res.statusCode >= 200 && res.statusCode < 300) {
+                    //回调成功
+                    var resp = res.body.string();
+                    log(resp);
+                    return resp;
+                } else {
+                    return "未知异常";
+                }
+            }
+            function writeLog(inform, type) {
+                /*参数说明:
+                 *@param:inform  返回信息
+                 *@param:type   支付方式(支付宝1,微信2, QQ3)
+                 */
+                //获取当前时间
+                var date = new Date();
+                //年
+                var year = date.getFullYear();
+                //月
+                var month = date.getMonth() + 1;
+                //日
+                var day = date.getDate();
+                //时
+                var hh = date.getHours();
+                //分
+                var mm = date.getMinutes();
+                //秒
+                var ss = date.getSeconds();
+                var time = year + "年" + month + "月" + day + "日" + hh + ":" + mm + ":" + ss;
+                //支付方式判断
+                if (type == 1) {
+                    pay_type = "支付宝";
+                } else if (type == 2) {
+                    pay_type = "微信";
+                } else if (type == 3) {
+                    pay_type = "QQ";
+                } else {
+                    pay_type = "未知支付方式";
+                }
+                //订单编号 正则匹配
+                var order_no = inform.match(/\d+/i);
+                //服务器返回信息
+                var information =
+                    "时间:" + time + "\r\n" +
+                    "订单编号:" + order_no + "\r\n" +
+                    "支付方式:" + pay_type + "\r\n" +
+                    "状态信息:" + inform + "\r\n" +
+                    "\r\n";
+                var path = "/sdcard/payLog.txt";
+                if (!files.exists(path)) {
+                    files.create(path);
+                    files.append(path, "软件监控服务器日志信息:\r\n");
+                }
+                files.append(path, information);
+                log(information);
+            }
+```
+* 所需权限:通知栏权限,无障碍。
+* 支付宝:支付宝请打开收款语音提示(不要调成静音模式)
+* 微信:开启微信收款到账提示
+* 监听软件(云支付):保持软件持续运行,让软件保持存活状态,以免被系统查杀。
 ## 通用接口地址:
 * 支付接口:```http://域名/pay/api.php```
 * 软件监控地址:```http://域名/pay/corn.php```
