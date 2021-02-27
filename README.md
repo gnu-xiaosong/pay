@@ -29,6 +29,23 @@
 | pay_tag  | 商品备注 | string| 可传 |
 | description  | 商品描述 | string| 可传 |
 | sitename | 站点名称 | string| 可传 |
+###### 支付回调参数(暂时为同步通知回调notify_url.php):
+>回调方法:GET
+
+>说明:具体参数详见SDK下的help.txt文件说明。具体以SDK下的help.txt文件为准
+
+| 参数 | 含义     | 类型  |
+|:--------:|:-------------:|:-------------:|
+| status  | 支付状态 | int(1:支付成功;0:未支付)| 
+| type   | 支付类型 (支付宝1，微信2，QQ支付3)| int| 
+| money | 金额 | float| 
+| trade_no   | 商户网站订单编号(非云订单号) | string| 
+| sign  | 签名 | string  |
+
+* 签名算法:md5
+* 算法公式:status+money+trade_no
+* php算法例子:md5($status.$money.$trade_no)
+* 说明:sdk已经为您封装好了签名算法，您只需要处理接收参数逻辑即可
 
 ## 通用接口地址:
 * 支付接口:```http://域名/pay/api.php```
