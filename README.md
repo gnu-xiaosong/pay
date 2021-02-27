@@ -17,6 +17,7 @@
 * return_url.php: 同步跳转处理文件(主要SDK集成业务逻辑处理文件)
 ###### yunApi.php接收参数:
 >请求方法:同时支持GET或POST
+
 >说明:具体参数详见SDK下的help.txt文件说明。具体以SDK下的help.txt文件为准
 
 | 参数 | 含义    |类型 | 说明  |
