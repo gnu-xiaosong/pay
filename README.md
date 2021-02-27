@@ -29,7 +29,7 @@
 | pay_tag  | 商品备注 | string| 可传 |
 | description  | 商品描述 | string| 可传 |
 | sitename | 站点名称 | string| 可传 |
-###### 支付回调参数(暂时为同步通知回调notify_url.php):
+###### 支付回调参数(暂时为同步通知回调return_url.php):
 >回调方法:GET
 
 >说明:具体参数详见SDK下的help.txt文件说明。具体以SDK下的help.txt文件为准
