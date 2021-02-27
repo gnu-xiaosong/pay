@@ -7,7 +7,9 @@
 * 前端利用vue开发，
 * 后端利用thinkphp开发
 ## 文档说明:
-### 体验:http://103.152.170.170:8088/demo/counter1.php
+### 体验:
+* 管理员后台:[点我进入](http://103.152.170.170:8083/public/index.php/admin)
+* 商户后台:[点我进入](http://103.152.170.170:8083/public/index.php/user)
 ## 系统搭建使用方法:
 * 解压放入网站目录下访问域名即可(如果需要全新安装只需要删除/public/install 目录下的install.lock和config.db.php文件即可)
 ## 商户对接方法:
