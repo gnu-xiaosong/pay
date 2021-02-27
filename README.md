@@ -44,7 +44,10 @@
 
 * 签名算法:md5
 * 算法公式:status+money+trade_no
-* php算法例子:md5($status.$money.$trade_no)
+* php算法例子:
+```php
+md5($status.$money.$trade_no)
+```
 * 说明:sdk已经为您封装好了签名算法，您只需要处理接收参数逻辑即可
 
 ## 通用接口地址:
