@@ -12,6 +12,7 @@
 ## 文档说明:
 #### SDK对接文档:
 ###### 核心文件:
+* yunPay.config.php:商户信息配置文件
 * yunApi.php: 调用SDK支付接口文件
 * notify_url.php: 异步支付处理文件
 * return_url.php: 同步跳转处理文件(主要SDK集成业务逻辑处理文件)
