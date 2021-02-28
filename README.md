@@ -8,7 +8,7 @@
 * Ant Design vue
 * element
 * Euiadmin
-* thinkphp框架等开源项目。
+* thinkphp
 ## 文档引导
 -  [下载](#1)
 -  [项目目录结构](#2)
