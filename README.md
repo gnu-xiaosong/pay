@@ -3,12 +3,13 @@
 * 所有人:小松科技
 * 邮箱:1829134124@qq.com
 * 说明:有任何问题都可以私信我
-## 鸣谢
+## 鸣谢🍓
 * vue
 * Ant Design vue
 * element
 * Euiadmin
 * thinkphp
+* autojs
 ## 文档引导
 -  [下载](#1)
 -  [项目目录结构](#2)
