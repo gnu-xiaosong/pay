@@ -32,8 +32,8 @@
 * 设置不同金额会增加监听支付成功比例。
 * 后期会不断优化提高支付成功比例。
 ## <a id="1">下载:</a>
-* 蓝奏云下载: [点我下载](https://fusong.lanzous.com/b01c5m8aj
-)密码:felk 
+* 蓝奏云下载: [点我下载](https://fusong.lanzous.com/i43H8ma4h2f
+)
 ## 介绍:
 * 前端利用vue开发，
 * 后端利用thinkphp开发
