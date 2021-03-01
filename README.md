@@ -17,6 +17,7 @@
 -  [体验](#4)
 -  [集成支付](#12)
 -  [系统搭建方法](#7)
+-  [支付接口文档](#13)
 -  [SDK文档](#5)
 -  [监控软件](#6)
 -  [通用接口地址](#8)
@@ -105,6 +106,36 @@
 ├─README.md             README 文件
 ├─index.phhp            项目入口文件
 ~~~
+## <a id="13">支付接口文档:</a>
+>默认支付接口api:http://域名或ip/public/index.php/pay
+
+>请求方法:GET
+
+#### 请求参数:
+| 参数 | 含义    |类型 | 说明  |
+|:--------:|:-------------:|:-------------:|:-------------:|
+| id  | 商户id | int| 必传 |
+| sign  | 签名 (md5)| int| 必传(具体签名规则下面会有说明) |
+| trade_no  | 商户网站订单编号 |string |  必传 |
+| type | 支付类型(支付宝1，微信2，云支付3) | int| 必传 |
+| subject | 商品名称 | string | 必传 |
+| yun_type | 云支付支付类型 | int| (默认支付宝:支付宝1，微信2)主要是在 软件监听时用到|
+| total_amount  | 金额 | float | 必传 |
+| description  | 商品描述 | string| 可传 |
+| remark | 商品备注 | string| 可传 |
+| category  | 商品分类 | string | 可传 |
+| pay_methods  | 官方支付方法(默认web类型:下面会有说明)| string| 可传 |
+| return_url | 同步通知地址|string|  必传 |
+| notify_url | 异步通知地址 | string| 可传(默认通知地址为同步通知) |
+
+#### 签名:
+* 签名算法:MD5
+* 算法规则:total_amount(金额)+trade_no(商户网站订单编号)+key(商户密钥)
+* php签名:(其他需要自行百度)
+```php
+$sign=md5($total_amount.$trade_no.$key)
+```
+
 ### 云支付(软件监控支付)核心后端源码文件:
 * api.php:网页端请求接口
 * corn.php:监控软件端请求接口
@@ -156,7 +187,7 @@
 | goods_name  | 商品名 |string|  必传 |
 | money | 金额 | float| 必传 |
 | pay_methods | 官方支付方法(默认也可) | string | 可传 官方支付用到 |
-| yun_type | 云支付支付类型 | int| (默认支付宝:支付宝1，微信2，QQ支付3)主要是在 软件监听时用到|
+| yun_type | 云支付支付类型 | int| (默认支付宝:支付宝1，微信2)主要是在 软件监听时用到|
 | pay_tag  | 商品备注 | string| 可传 |
 | description  | 商品描述 | string| 可传 |
 | sitename | 站点名称 | string| 可传 |
