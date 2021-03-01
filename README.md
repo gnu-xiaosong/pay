@@ -134,15 +134,15 @@ http://域名或ip/public/index.php/pay
 #### <a id="14">微信支付pay_methods方法参数:</a>
 | 参数 | 含义    |
 |:--------:|:-------------:|
-   | mp | 公众号支付   |
-    |  wap  |手机网站支付|
-     | app  | APP支付|
-     | pos   |刷卡支付|
-     | scan | 扫码支付|
-     | transfer | 账户转账|
-     | mini    | 小程序支付|
-      |redpack  |普通红包|
-     | groupRedpack| 裂变红包|
+| mp | 公众号支付   |
+|  wap  |手机网站支付|
+| app  | APP支付|
+| pos   |刷卡支付|
+| scan | 扫码支付|
+| transfer | 账户转账|
+| mini    | 小程序支付|
+|redpack  |普通红包|
+| groupRedpack| 裂变红包|
 
 #### <a id="14">支付宝支付pay_methods方法参数:</a>
 | 参数 | 含义    |
