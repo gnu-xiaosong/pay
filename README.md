@@ -107,8 +107,10 @@
 ├─index.phhp            项目入口文件
 ~~~
 ## <a id="13">支付接口文档:</a>
->默认支付接口api:http://域名或ip/public/index.php/pay
-
+>默认支付接口api:
+```
+http://域名或ip/public/index.php/pay
+```
 >请求方法:GET
 
 #### 请求参数:
@@ -130,8 +132,9 @@
 
 #### 签名:
 * 签名算法:MD5
-* 算法规则:total_amount(金额)+trade_no(商户网站订单编号)+key(商户密钥)
-* php签名:(其他需要自行百度)
+* 算法规则:
+total_amount(金额)+trade_no(商户网站订单编号)+key(商户密钥)
+* php签名:(其他语言需要自行百度)
 ```php
 $sign=md5($total_amount.$trade_no.$key)
 ```
