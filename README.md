@@ -96,6 +96,7 @@
 │  ├─phpunit.xml        phpunit配置文件
 │  └─start.php          框架入口文件
 │
+├─vendor                第三方类库文件目录
 ├─extend                扩展类库目录
 ├─runtime               应用的运行时目录（可写，可定制）
 ├─build.php             自动生成定义文件（参考）
