@@ -171,7 +171,7 @@ $sign=md5($total_amount.$trade_no.$key)
 * 第一步:申请商户:到官网[这里的官网指用该程序搭建的网站]注册申请商户信息([点我注册](http://103.152.170.170:8083/public/index.php/user))
 * 第二步:下载监控软件和SDK集成包:登陆商户后台，
 * 第三步:基层SDK到自己网站:下载集成SDK包集成到自己的网站(看开发文档)
-## 文档说明:
+## SDK文档说明:
 #### <a id="5">SDK对接文档:</a>
 ###### 核心文件:
 * yunPay.config.php:商户信息配置文件
@@ -253,10 +253,11 @@ $yunPay_config['apiurl']    = 'http://103.152.170.170:8083/pay/api.php';
 | sign  | 签名 | string  |
 
 * 签名算法:md5
-* 算法公式:status+money+trade_no
-* php算法例子:
+* 算法公式:
+total_amount(金额)+trade_no(商户网站订单编号)+key(商户密钥)
+* php签名算法例子:
 ```php
-md5($status.$money.$trade_no)
+$sign=md5($total_amount.$trade_no.$key)
 ```
 * 说明:sdk已经为您封装好了签名算法，您只需要处理接收参数逻辑即可
 * 同步回调(return_url.php)SDK代码:
