@@ -105,7 +105,7 @@
 ├─README.md             README 文件
 ├─index.phhp            项目入口文件
 ~~~
-### 核心后端源码文件:
+### 云支付(软件监控支付)核心后端源码文件:
 * api.php:网页端请求接口
 * corn.php:监控软件端请求接口
 * db.sql:创建数据库文件(导入即可)
@@ -128,7 +128,7 @@
 * 解压放入网站目录下访问域名即可(如果需要全新安装只需要删除/public/install 目录下的install.lock和config.db.php文件即可)
 * 提示:在宝塔环境下会出现没有入口文件的情况 ,需要删除宝塔生成的防跨站文件.user.ini文件即可
 ## <a id="8">通用接口地址:</a>
-* 支付接口:```http://域名/pay/api.php```
+* 支付接口:```http://域名/public/index.php/pay```
 * 软件监控地址:```http://域名/pay/corn.php```
 * demo测试地址:```http://域名/demo```
 * 监控软件下载地址:```http://域名/SDK/云支付.apk```
