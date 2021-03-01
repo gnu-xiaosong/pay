@@ -147,13 +147,13 @@ http://域名或ip/public/index.php/pay
 #### <a id="14">支付宝支付pay_methods方法参数:</a>
 | 参数 | 含义    |
 |:--------:|:-------------:|
-     | web|  电脑支付  |
-     | wap  |手机网站支付|
-      |app  | APP支付|
-     | pos  | 刷卡支付|
-     | scan | 扫码支付|
-     | transfer|  账户转账|
-     | mini     |小程序支付|
+| web|  电脑支付  |
+| wap  |手机网站支付|
+|app  | APP支付|
+| pos  | 刷卡支付|
+| scan | 扫码支付|
+| transfer|  账户转账|
+| mini     |小程序支付|
 
 #### 签名:
 * 签名算法:MD5
