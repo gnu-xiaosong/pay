@@ -43,8 +43,7 @@
 #### 完整包下载:
 * v1.0下载(仅支持软件支付监听): [点我下载](https://fusong.lanzous.com/i43H8ma4h2f
 )
-* v2.0下载(集成官方支付宝):[点我下载](https://fusong.lanzous.com/b01c5m8cb
-)密码:6ofb
+* v2.0下载(集成官方支付宝):[点我下载](https://fusong.lanzous.com/b01c5xw7g)密码:fw9w
 #### 拓展包下载:
 * SDK下载:[请下载对应版本的SDK](https://fusong.lanzous.com/b01c5y0ib
 )密码:e6y9
