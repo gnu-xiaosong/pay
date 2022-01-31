@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([["chunk-2d22bf54"],{f0d8:function(t,e,n){"use strict";n.r(e);var a=n("2877"),l=Object(a.a)({},function(){var t=this.$createElement;return(this._self._c||t)("a-layout-footer",{staticStyle:{"text-align":"center"}},[this._v("\n    云支付 ©2021 Created by  小松科技\n  ")])},[],!1,null,null,null);e.default=l.exports}}]);

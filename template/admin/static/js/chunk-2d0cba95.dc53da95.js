@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([["chunk-2d0cba95"],{"4b2c":function(e,a){throw new Error('Module parse failed: Unexpected token (1:0)\nYou may need an appropriate loader to handle this file type.\n> <template>\n|   <div class="chart-min-chart-wrapper" >\n|     <a-card hoverable :bordered="false" :loading="loading">')}}]);

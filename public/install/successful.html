@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<title>程序安装-云支付系统</title>
+<link rel="icon" href="favicon.ico" type="image/ico">
+<meta name="keywords" content="开源免费的程序安装框架">
+<meta name="description" content="便捷，快速，高效，微小">
+<meta name="author" content="yinqi">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/materialdesignicons.min.css" rel="stylesheet">
+<link href="css/style.min.css" rel="stylesheet">
+</head>
+  
+<body>
+<div class="lyear-layout-web">
+  <div class="lyear-layout-container">
+    
+         
+ <h3><center>安装向导</center></h3>
+    
+    <!--页面主要内容-->
+
+
+      <div class="container-fluid">
+        
+        <div class="row">
+          
+          <div class="col-sm-6 col-lg-3">
+            <div class="card">
+              <div class="card-header bg-primary">
+                <h4>安装成功！</h4>
+                <ul class="card-actions">
+                  <li>
+                    <button type="button"><i class="mdi mdi-more"></i></button>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <p color="red">恭喜您安装成功！.</p>
+              </div>
+            </div>
+          </div>
+          
+          
+          <div class="col-sm-6 col-lg-3">
+            <div class="card">
+              <div class="card-header bg-primary">
+                <h4>默认管理员</h4>
+                <ul class="card-actions">
+                  <li>
+                    <button type="button"><i class="mdi mdi-more"></i></button>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <p>提示:如果需要重新安装请删除/public/install/目录下的install.lock和config.db.php文件，然后访问域名即可进入安装向导</p>
+                <p>账号:admin</p>
+                <p>密码:xskj</p>
+                 <p>请及时修改账号密码！</p>
+                <h>管理员后台登录地址: <small class="help-block">http://域名/public/index.php/admin </small></h>
+                                <h>商户后台登录地址: <small class="help-block">http://域名/public/index.php/user </small></h>
+                   <div class="example-box">
+                     <button class="btn btn-w-md btn-round btn-warning" onclick="javascript:location.href='/index.php'">访问首页</button>
+                     <button class="btn btn-w-md btn-round btn-success" onclick="javascript:location.href='/public/index.php/admin'">登录后台</button>
+                    </div>
+                
+              </div>
+            </div>
+          </div>
+        
+  
+        </div>
+        
+        
+      </div>
+     
+  </div>
+</div>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/perfect-scrollbar.min.js"></script>
+<script type="text/javascript" src="js/main.min.js"></script>
+</body>
+</html>

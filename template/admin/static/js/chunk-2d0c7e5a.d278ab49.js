@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([["chunk-2d0c7e5a"],{5328:function(n,o,p){n.exports=p.p+"static/fonts/YueHei.ba5b9ad3.ttf"}}]);

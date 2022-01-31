@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([["chunk-2d216281"],{c0ec:function(e,n){throw new Error('Module parse failed: Unexpected token (1:0)\nYou may need an appropriate loader to handle this file type.\n> <template>\n|   <a-layout-footer style="text-align: center">\n|       小松云支付 ©2021 Created by  xskj')}}]);

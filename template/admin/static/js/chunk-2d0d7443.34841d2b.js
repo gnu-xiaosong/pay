@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([["chunk-2d0d7443"],{"75a0":function(n,o,p){n.exports=p.p+"static/fonts/DianHei.5047b41d.ttf"}}]);
