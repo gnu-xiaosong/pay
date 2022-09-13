@@ -71,7 +71,7 @@ http://49.232.124.10:8888/down/pSAzEFVCtePI
 
 #### 拓展包下载:
 
-- SDK 下载:[请下载对应版本的 SDK](https://fusong.lanzous.com/b01c5y0ib)密码:e6y9
+- SDK 下载:[请下载对应版本的 SDK](https://fusong.lanzoul.com/b01c5y0ib)密码:e6y9
 - 移动端监控软件下载:[下载](https://fusong.lanzoul.com/b01d5633c)密码:g87s
 - PC端监控软件下载:[下载](https://fusong.lanzoul.com/b01d5632b)密码:d8ug
 - 手动更新包:[请对外对应版本的更新包](https://fusong.lanzous.com/b01c5y4uh)密码:3z2p
