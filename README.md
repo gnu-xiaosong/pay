@@ -37,7 +37,7 @@ https://www.showdoc.com.cn/1819524507474584/8398407783645943
 
 ## 监听软件演示
 
-http://pay_xskj_store/down/pSAzEFVCtePI
+http://pay.xskj.store/down/pSAzEFVCtePI
 
 
 ## <a id="12">支付集成:</a>
@@ -235,9 +235,9 @@ $sign=md5($total_amount.$trade_no.$key)
 
 > 如果不想自己搭建系统，可以在这里申请商户集成。
 
-- 管理员后台:[点我进入](http://pay_xskj_store/public/index.php/admin)
-- 商户后台:[点我进入](http://pay_xskj_store/public/index.php/user)
-- 支付测试:[点我进入](http://pay_xskj_store/demo)
+- 管理员后台:[点我进入](http://pay.xskj.store/public/index.php/admin)
+- 商户后台:[点我进入](http://pay.xskj.store/public/index.php/user)
+- 支付测试:[点我进入](http://pay.xskj.store/demo)
 
 ## <a id="7">系统搭建使用方法:</a>
 
