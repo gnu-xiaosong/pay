@@ -78,7 +78,8 @@ http://pay.xskj.store/down/pSAzEFVCtePI
 - 移动端监控软件下载:[下载](https://fusong.lanzoul.com/b01d5633c)密码:g87s
 - PC端监控软件下载:[下载](https://fusong.lanzoul.com/b01d5632b)密码:d8ug
 - 手动更新包:[请对外对应版本的更新包](https://fusong.lanzous.com/b01c5y4uh)密码:3z2p
-
+- 云端监控脚本:  [下载][(https://fusong.lanzous.com/b01c5y4uh](https://fusong.lanzoul.com/b01egtwad
+)密码:9ym6
 ## 介绍:
 
 - 前端利用 vue 开发，
