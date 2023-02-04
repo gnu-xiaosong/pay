@@ -588,4 +588,40 @@ function writeLog(inform, type) {
 ## 2023-2-4 添加支付宝PC端监控软件，更加稳定，以及云端监控脚本，挂载服务器运行即可。具体用法见上方文档。
 ## 捐赠:
 
+
+# PC新版监控软件使用说明
+###[下载链接](https://fusong.lanzoul.com/b01d5632b  "下载链接")
+密码: d8ug
+![](https://www.showdoc.com.cn/server/api/attachment/visitFile?sign=5c24e014ec7ee109f99cd55f9bfd48fc&file=file.png)
+
+###文件介绍
+![](https://www.showdoc.com.cn/server/api/attachment/visitFile?sign=641d503daa24df1d970191f3d63e992d&file=file.png)
+### 使用方法
+* 1 管理员身份打开
+![](https://www.showdoc.com.cn/server/api/attachment/visitFile?sign=ec2aa809aefcfe164ef6064e66e971cf&file=file.png)
+* 2 填写信息登录：这里的服务器地址是你申请的地址
+![](https://www.showdoc.com.cn/server/api/attachment/visitFile?sign=938e416d34cc1d8e7fdc0e3fd6f6f8be&file=file.png)
+* 3 这里不是核心！！！
+	 - 第一：点击扫码登录按钮，等待右下角出现二维码图片
+	 - 第二：打开支付宝，扫码登录，这里注意！只要你手机显示登录成功即可，因为这里不会给提示是否登录成功，以你的手机支付宝为准。
+	 - 第三：开始监控，点击“启动监控”按钮，
+	 - 当你要关闭时，只要将窗口1关闭即可
+
+![](https://www.showdoc.com.cn/server/api/attachment/visitFile?sign=99ecbcb8e9907cf015c8f948bae8c960&file=file.png)
+
+![](https://www.showdoc.com.cn/server/api/attachment/visitFile?sign=a21f4c2592fa19c6d688ddfa3007e098&file=file.png)
+
+![](https://www.showdoc.com.cn/server/api/attachment/visitFile?sign=f5d75529b80b5b30cd1f0b85a1a34d24&file=file.png)
+![](https://www.showdoc.com.cn/server/api/attachment/visitFile?sign=523ae054f17836c58d25c611157c102a&file=file.png)
+
+![](https://www.showdoc.com.cn/server/api/attachment/visitFile?sign=24b4a7fa9d75e844b520c8d293671d55&file=file.png)
+
+![](https://www.showdoc.com.cn/server/api/attachment/visitFile?sign=660397a342e9d9c96527e3ca5d429e03&file=file.png)
+![](https://www.showdoc.com.cn/server/api/attachment/visitFile?sign=390ea20546b2a2622aa23becf1d950ed&file=file.png)
+# 云端监控脚本使用说明
+
+
+
+
+
 [捐赠](http://103.152.170.170:8083/demo)
